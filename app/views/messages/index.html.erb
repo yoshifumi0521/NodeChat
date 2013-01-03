@@ -1,0 +1,70 @@
+
+
+
+<ol id="chat"> 
+
+  <% @messages.each do |messsage| %>
+
+    <li><%= messsage.content %></li>
+
+  <% end %>
+
+</ol>
+
+<%= form_for Message.new,:remote => true,:html => {:id => 'form'} do |f| %> 
+
+  <%= f.text_area :content %> 
+  <%= f.submit "Send" %>
+
+<% end %>
+
+
+<script >
+
+  $(function(){
+    
+    $("#form")
+      .live("ajax:beforeSend", function(e,data,status,xhr){
+      //ajax通信の送信時の処理
+    
+    })  
+      .live("ajax:success", function(e,data,status,xhr){ 
+      //ajax通信の成功時の処理
+      var content = data["message"]["content"];
+      console.log(content);
+      $("#chat").append("<li>"+ content + "</li>");
+
+      $("#message_content").val(""); 
+
+    }) 
+      .live("ajax:error", function(e,data,status,xhr){
+      // ajax通信失敗時の処理 
+      console.log("失敗");
+
+    }) 
+      .live("ajax:complete", function(e,xhr,status){ 
+      // ajax通信完了時の処理 
+          
+    
+    
+    })
+  
+  
+  })  
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
