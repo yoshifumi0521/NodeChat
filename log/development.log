@@ -8380,3 +8380,565 @@ Served asset /jquery_ujs.js - 304 Not Modified (3ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 13:47:36 +0900
 Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:48:33 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa\r\n\r\nsas"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (7.7ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasa\r\n\r\nsas"], ["created_at", Thu, 03 Jan 2013 04:48:33 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:48:33 UTC +00:00]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 13:48:53 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:48:55 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasa"], ["created_at", Thu, 03 Jan 2013 04:48:55 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:48:55 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:48:58 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasas\r\n\r\nsas"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "sasas\r\n\r\nsas"], ["created_at", Thu, 03 Jan 2013 04:48:58 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:48:58 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 13:54:27 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:54:43 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "sasa"], ["created_at", Thu, 03 Jan 2013 04:54:43 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:54:43 UTC +00:00]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:59:35 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasasas"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasasas"], ["created_at", Thu, 03 Jan 2013 04:59:35 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:59:35 UTC +00:00]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 13:59:45 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:59:50 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sas"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sas"], ["created_at", Thu, 03 Jan 2013 04:59:50 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:59:50 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 13:59:53 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sassa\r\n\r\nsasa"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "sassa\r\n\r\nsasa"], ["created_at", Thu, 03 Jan 2013 04:59:53 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 04:59:53 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:00:28 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.3ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:00:29 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:00:38 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa\r\n\r\nsasa"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "sasa\r\n\r\nsasa"], ["created_at", Thu, 03 Jan 2013 05:00:38 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:00:38 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:28 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:01:30 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "sasa"], ["created_at", Thu, 03 Jan 2013 05:01:30 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:01:30 UTC +00:00]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:01:33 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa\r\n\r\n\r\nasas"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasa\r\n\r\n\r\nasas"], ["created_at", Thu, 03 Jan 2013 05:01:33 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:01:33 UTC +00:00]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.3ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (31.1ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:34 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:01:37 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:40 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:02:42 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasa"], ["created_at", Thu, 03 Jan 2013 05:02:42 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:02:42 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:43 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:02:46 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"sasa\r\n\r\n\r\nasas"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "sasa\r\n\r\n\r\nasas"], ["created_at", Thu, 03 Jan 2013 05:02:46 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:02:46 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:02:49 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:04:44 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"ささ\r\n\r\n\r\nあさs\r\n\r\n\r\n\r\nあささ\r\n\r\nあさ"}, "commit"=>"Send"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "ささ\r\n\r\n\r\nあさs\r\n\r\n\r\n\r\nあささ\r\n\r\nあさ"], ["created_at", Thu, 03 Jan 2013 05:04:44 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:04:44 UTC +00:00]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:46 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:51 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2013-01-03 14:04:56 +0900
+Processing by MessagesController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CFMvGOY3/PyPO73yH8uVUc7VQPm3SW/qb/hJbD+uxlY=", "message"=>{"content"=>"ささs\r\n\r\nあさs\r\n\r\n\r\nあさs"}, "commit"=>"Send"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "messages" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "ささs\r\n\r\nあさs\r\n\r\n\r\nあさs"], ["created_at", Thu, 03 Jan 2013 05:04:56 UTC +00:00], ["updated_at", Thu, 03 Jan 2013 05:04:56 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Processing by MessagesController#index as HTML
+  [1m[35mMessage Load (0.2ms)[0m  SELECT "messages".* FROM "messages" 
+  Rendered messages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:04:57 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-03 14:04:59 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mMessage Load (0.2ms)[0m  [1mSELECT "messages".* FROM "messages" [0m
+  Rendered messages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-01-03 14:05:00 +0900
+Served asset /application.js - 304 Not Modified (0ms)

@@ -5,7 +5,7 @@
 
   <% @messages.each do |messsage| %>
 
-    <li><%= messsage.content %></li>
+    <li><%= simple_format(messsage.content) %></li>
 
   <% end %>
 
@@ -31,8 +31,11 @@
       .live("ajax:success", function(e,data,status,xhr){ 
       //ajax通信の成功時の処理
       var content = data["message"]["content"];
-      console.log(content);
-      $("#chat").append("<li>"+  escape(content) + "</li>");
+      //改行コードに変換する。
+      REbr = new RegExp(String.fromCharCode(10),"g");
+      content = content.replace(REbr,"<br>"); 
+      
+      $("#chat").append("<li><p>"+ content + "</p></li>");
 
       $("#message_content").val(""); 
 
