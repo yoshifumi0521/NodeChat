@@ -32,7 +32,7 @@
       //ajax通信の成功時の処理
       var content = data["message"]["content"];
       console.log(content);
-      $("#chat").append("<li>"+ content + "</li>");
+      $("#chat").append("<li>"+  escape(content) + "</li>");
 
       $("#message_content").val(""); 
 
