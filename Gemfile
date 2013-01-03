@@ -22,6 +22,11 @@ end
 
 gem 'jquery-rails'
 
+#ライブラリのfayeを利用
+gem "faye"
+gem "thin"
+
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
